@@ -1,0 +1,77 @@
+You are very welcome to add me for help!
+http://steamcommunity.com/id/Busan1
+
+I suggest that you use Notepad++ to edit!
+And! Many configuration options in wcd_settings.lua. Check it! :)
+
+
+AUTO GENERATE ALL YOUR TDM CARS(you will have to set up your price, restrictions etc):
+go to your Server Console/Web Console
+type lua_run GenerateAllMyCarsPlease()
+look in your FTP: garrysmod/data/TDMCARSGENERATED.lua
+paste this in wcd_cars.lua, below this:
+function InitializeSharedCarDealer()
+
+	if( !CarDealer ) then
+		return;
+	end
+	
+then you have to set up your prices, restrictions, disallow stuff etc
+
+
+in wcd_cars.lua it's carefully explained how to set up cars.
+
+To add a car dealer:
+Q > Entities > William's items > Car Dealer
+Spawn him and put him where you want.
+Write: !cardealer (while looking at him).
+
+Dealer id = what cars does he deal?
+(you configure each car's dealerid in wcd_cars.lua. If a car has no dealerid, it will default to 0!)
+
+Model = Should have a different model?
+Hold Q > right click a ragdoll > Copy to clipboard
+Not all ragdolls works(not my fault!)
+
+Name = What is his name(General Vehicles, Police Dealer, Taxi Manager etc)
+
+Save Configuration.
+
+Add Platform:
+Create a platform which cars that this dealer spawns, will be spawned on top of.
+If a platform has a player, or a car, or a prop on it, it will look for a different platform,
+so set up multiple platforms!
+
+----------------
+
+Fuel Pump:
+Spawn a fuel pump, place it as you want.
+Done!
+
+
+!caradmin > Save All Car Dealers/Fuel Pumps!
+
+All done!
+
+Latest VERSION UPDATE: 5.1.1
+UPDATED FILES:
+server/wcd_cardealer.lua
+server/wcd_setup.lua
+client/wcd_cardealer2.lua
+
+Fixed buy error.
+Fixed the !A !B notification problem.
+
+
+AUTO GENERATE ALL YOUR TDM CARS(you will have to set up your price, restrictions etc):
+go to your Server Console/Web Console
+type lua_run GenerateAllMyCarsPlease()
+look in your FTP: garrysmod/data/TDMCARSGENERATED.lua
+paste this in wcd_cars.lua, below this:
+function InitializeSharedCarDealer()
+
+	if( !CarDealer ) then
+		return;
+	end
+	
+then you have to set up your prices, restrictions, disallow stuff etc

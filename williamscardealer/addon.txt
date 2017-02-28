@@ -1,0 +1,11 @@
+"AddonInfo"
+{
+	"name"				"William's Car Dealer"
+	"version"			"5.1.1"
+	"up_date"			"21/06/15"
+	"author_name"			"William"
+	"author_email"			""
+	"author_url"			""
+	"info"				"Extra"
+	"override"			"0"
+}
